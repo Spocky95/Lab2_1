@@ -16,5 +16,24 @@ namespace Lab1_1
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'lab2DataSet.Book' table. You can move, or remove it, as needed.
+            this.bookTableAdapter.Fill(this.lab2DataSet.Book);
+            // TODO: This line of code loads data into the 'lab2DataSet.Author' table. You can move, or remove it, as needed.
+            this.authorTableAdapter.Fill(this.lab2DataSet.Author);
+
+        }
     }
 }
