@@ -75,6 +75,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(550, 345);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dataGridView2
             // 
@@ -92,10 +93,11 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(545, 345);
             this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 395);
+            this.textBox1.Location = new System.Drawing.Point(12, 381);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(215, 20);
             this.textBox1.TabIndex = 2;
@@ -103,7 +105,7 @@
             // Author
             // 
             this.Author.AutoSize = true;
-            this.Author.Location = new System.Drawing.Point(9, 379);
+            this.Author.Location = new System.Drawing.Point(9, 365);
             this.Author.Name = "Author";
             this.Author.Size = new System.Drawing.Size(38, 13);
             this.Author.TabIndex = 3;
@@ -113,7 +115,7 @@
             // Book
             // 
             this.Book.AutoSize = true;
-            this.Book.Location = new System.Drawing.Point(586, 379);
+            this.Book.Location = new System.Drawing.Point(586, 365);
             this.Book.Name = "Book";
             this.Book.Size = new System.Drawing.Size(32, 13);
             this.Book.TabIndex = 4;
@@ -122,21 +124,21 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 431);
+            this.textBox2.Location = new System.Drawing.Point(12, 417);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(215, 20);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(589, 395);
+            this.textBox3.Location = new System.Drawing.Point(589, 381);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(233, 20);
             this.textBox3.TabIndex = 6;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(589, 431);
+            this.textBox4.Location = new System.Drawing.Point(589, 417);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(233, 20);
             this.textBox4.TabIndex = 7;
@@ -208,39 +210,43 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 457);
+            this.button1.Location = new System.Drawing.Point(12, 443);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
             this.button1.Text = "Add Author";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(589, 457);
+            this.button2.Location = new System.Drawing.Point(589, 443);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
             this.button2.Text = "Add Book";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 519);
+            this.button3.Location = new System.Drawing.Point(254, 520);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(652, 23);
+            this.button3.Size = new System.Drawing.Size(651, 23);
             this.button3.TabIndex = 10;
             this.button3.Text = "Add Author and book";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(13, 549);
+            this.button4.Location = new System.Drawing.Point(254, 549);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(651, 23);
             this.button4.TabIndex = 11;
             this.button4.Text = "Clear Tables";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
